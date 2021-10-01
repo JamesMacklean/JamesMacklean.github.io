@@ -20,8 +20,7 @@
 .logo{
     width: 450px;
     position: absolute;
-    top: 1%;
-    left: 2%;
+    top: 3%;
     cursor: pointer;
 }
 nav{
@@ -52,7 +51,7 @@ nav ul li a{
 }
 nav ul li a::after{
     content: '';
-    height: 1px;
+    height: 2px;
     width: 0;
     background: #ffffff;
     position: absolute;
@@ -150,19 +149,12 @@ nav ul li a:hover::after{
     margin: 25px 5px;
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1280px), (max-height: 800px){
     .logo{
-        width: 375px;
-    }
-}
-
-@media screen and (max-width: 1000px){
-    .logo{
-        width: 300px;
+        width: 350px;
     }  
     .cart-icon{
         width: 20px;
-        cursor: pointer;
     }
     nav ul li{
         margin: 0px 15px;
@@ -170,9 +162,11 @@ nav ul li a:hover::after{
     }
     .banner-text p{
         font-size: 40px;
+        font-weight: 500;
     }
     .banner-text h1{
-        font-size: 130px;   
+        font-size: 130px;  
+        line-height: 120px;
     }
     .banner-text h3{
         font-size: 19px;
@@ -180,9 +174,137 @@ nav ul li a:hover::after{
     #span-text {
         font-size: 14px;
     }
+    .banner-button{
+        margin: 20px auto 0;  
+    }
     .banner-button a{
         font-size: 14px;
         width: 160px;
     } 
-    
+    .social-icons img{
+        width: 20px;
+    }
+}
+@media screen and (max-width: 1024px), (max-height: 600px){
+    .logo{
+        width: 300px;
+    }  
+    .cart-icon{
+        width: 17px;
+        margin-right: 3%;
+    }
+    nav ul li{
+        margin: 0px 15px;
+        font-size: 14px;
+    }
+    .banner-text p{
+        font-size: 35px;
+    }
+    .banner-text h1{
+        font-size: 100px;  
+        line-height: 90px; 
+    }
+    .banner-text h3{
+        font-size: 16px;
+    }
+    #span-text {
+        font-size: 12px;
+    }
+    .banner-button{
+        margin: 10px auto 0;  
+    }
+    .banner-button a{
+        font-size: 12px;
+        width: 140px;
+    } 
+    .social-icons img{
+        width: 17px;
+    }
+}
+@media screen and (max-width: 770px){
+    .logo{
+        top: 7%;
+        left: 50%;
+        transform: translateX(-50%); 
+    } 
+    nav{
+        visibility: hidden;
+    }
+    .banner-text h1{ 
+        line-height: 120px; 
+    }
+}
+@media screen and (max-width: 540px){
+    #banner{
+        padding: 0;
+    }
+    .logo{
+        top: 3%;
+        cursor: pointer;
+        margin-top: 5%;
+        width: 225px;
+    } 
+    .cart-icon{
+        width: 15px;
+    }
+    nav ul{
+        padding-right: 10px;
+    }
+    nav ul li{
+        margin: 0px 10px;
+        font-size: 12px;
+    }
+    .banner-text{
+        position: absolute;
+        bottom: 8%;
+        color: #fff;
+    }
+    .banner-text p{
+        width: 275px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        font-size: 20px;
+    }
+    .banner-text h1{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 70px;  
+        line-height: 90px; 
+    }
+    .banner-text h3{
+        width: 300px;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    #span-text {
+        font-size: 10x;
+        
+        text-align: center;
+        margin-right: 0;
+    }
+    .banner-button{
+        display: flex;
+        justify-content: center;
+        margin: 30px auto 0;  
+    }
+    .banner-button a{
+        font-size: 10px;
+        width: 120px;
+    } 
+    .social-icons{
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 3%;
+    }
+    .social-icons img{
+        width: 15px;
+        display: inline-block;
+        margin: 10px 5px;
+    }
 }
