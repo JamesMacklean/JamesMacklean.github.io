@@ -148,6 +148,24 @@ nav ul li a:hover::after{
     display: block;
     margin: 25px 5px;
 }
+#sideNav{
+    /*visibility: hidden;*/
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #009688;
+    z-index: 2;
+}
+#sideNav ul li{
+    list-style: none;
+    margin: 20px 20px;
+}
+#sideNav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
 
 /*DESKTOP VERSION*/
 @media screen and (max-width: 1280px), (max-height: 800px){
@@ -222,7 +240,6 @@ nav ul li a:hover::after{
         width: 17px;
     }
 }
-
 /*MOBILE VERSION*/
 @media screen and (max-width: 600px){
     #banner{
@@ -232,7 +249,6 @@ nav ul li a:hover::after{
         cursor: pointer;
         margin-top: 5%;
         width: 225px;
-        
         left: 50%;
         transform: translateX(-50%); 
     } 
@@ -250,9 +266,8 @@ nav ul li a:hover::after{
         font-size: 12px;
     }
     .banner-text{
-        
         left: 50%;
-        transform: translateX(-50%); 
+        transform: translateX(-50%);
     }
     .banner-text p{
         width: 275px;
@@ -315,7 +330,7 @@ nav ul li a:hover::after{
         font-size: 10px;
     }
     .banner-text{
-        bottom: 8%;
+        bottom: 10%;
     }
     .banner-text p{
         font-size: 15px;
@@ -349,8 +364,9 @@ nav ul li a:hover::after{
 }
 @media screen and (max-height: 340px){
     .logo{
-    } 
+        top: 0%;
+    }
     .social-icons{
-        bottom: -1%;
+        bottom: 0%;
     }
 }
