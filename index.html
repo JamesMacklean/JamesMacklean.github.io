@@ -7,7 +7,6 @@
     </head>
     <body>
         <section id="banner">
-
             <img src="https://raw.githubusercontent.com/JamesMacklean/JamesMacklean.github.io/master/resources/logo.png" 
             alt="James & Kinah" class="logo">
             
@@ -40,6 +39,7 @@
                 <a href=""><img src="https://raw.githubusercontent.com/JamesMacklean/JamesMacklean.github.io/master/resources/images/icons/twitter.png" alt="twitter"></a>
             </div>
         </section>
+        
         <div id="sideNav">
                 <div>
                     <ul>
@@ -49,8 +49,28 @@
                     </ul>
                 </div>
         </div>
+
         <div id="menuButton">
-            
+            <img src="https://raw.githubusercontent.com/JamesMacklean/JamesMacklean.github.io/master/resources/images/icons/hamburger-icon.png" alt="menu button" id="hamburger-icon">
         </div>
+
+        <script>
+            var menuButton = document.getElementById("menuButton")
+            var sideNav = document.getElementById("sideNav")
+            var hamburgerIcon = document.getElementById("hamburger-icon")
+            
+            sideNav.style.right = "-250px"
+            
+            menuButton.onclick = function(){
+                if(sideNav.style.right == "-250px"){
+                    sideNav.style.right = "0";
+                    hamburgerIcon.src = "https://raw.githubusercontent.com/JamesMacklean/JamesMacklean.github.io/master/resources/images/icons/close.png";
+                } else {
+                    sideNav.style.right = "-250px";
+                    hamburgerIcon.src = "https://raw.githubusercontent.com/JamesMacklean/JamesMacklean.github.io/master/resources/images/icons/hamburger-icon.png";
+                }
+            }
+
+        </script>
     </body>
 </html>
