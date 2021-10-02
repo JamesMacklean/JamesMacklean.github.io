@@ -229,7 +229,6 @@ nav ul li a:hover::after{
         padding: 0;
     }
     .logo{
-        top: 1%;
         cursor: pointer;
         margin-top: 5%;
         width: 225px;
