@@ -189,7 +189,7 @@ nav ul li a:hover::after{
     text-align: center;
     position: fixed;
     right: 15px;
-    top: -30px;
+    top: -35px;
     z-index: 3;
     cursor: pointer;
 }
@@ -353,7 +353,7 @@ nav ul li a:hover::after{
         margin: 10px 5px;
     }
     #sideNav{ 
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 @media screen and (max-height: 500px){
@@ -395,7 +395,7 @@ nav ul li a:hover::after{
     } 
     .social-icons{
         /*bottom: -1%;*/
-        bottom: 5px;
+        bottom: 3px;
     }
     .social-icons img{
         width: 15px;
@@ -408,5 +408,9 @@ nav ul li a:hover::after{
 @media screen and (max-height: 340px){
     .logo{
         top: -2%;
+    }
+    .social-icons{
+        /*bottom: -1%;*/
+        bottom: -3px;
     }
 }
