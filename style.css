@@ -283,7 +283,6 @@ nav ul li a:hover::after{
     }
     #span-text {
         font-size: 10x;
-        
         text-align: center;
         margin-right: 0;
     }
@@ -308,7 +307,7 @@ nav ul li a:hover::after{
         margin: 10px 5px;
     }
 }
-@media screen and (max-height: 400px){
+@media screen and (max-height: 500px){
     .logo{
         width: 225px;
     }
@@ -319,6 +318,9 @@ nav ul li a:hover::after{
     nav ul li{
         margin: 0px 15px;
         font-size: 14px;
+    }
+    .banner-text{
+        bottom: 6%;
     }
     .banner-text p{
         font-size: 15px;
@@ -332,15 +334,65 @@ nav ul li a:hover::after{
     }
     #span-text {
         font-size: 10px;
+        margin: 10px;
     }
     .banner-button{
-        margin: 0 auto 0;
+        margin: 5px auto 0;
     }
     .banner-button a{
         font-size: 10px;
-        width: 120px;
+        width: 110px;
     } 
+    .social-icons{
+        bottom: 0%;
+    }
     .social-icons img{
+        width: 15px;
+    }
+}
+@media screen and (max-height: 430px){
+    .logo{
+        width: 175px;
+    }
+    .cart-icon{
         width: 17px;
+        margin-right: 3%;
+    }
+    nav ul li{
+        margin: 0px 15px;
+        font-size: 14px;
+    }
+    .banner-text{
+        bottom: 6%;
+    }
+    .banner-text p{
+        font-size: 15px;
+    }
+    .banner-text h1{
+        font-size: 50px;  
+        line-height: 60px; 
+    }
+    .banner-text h3{
+        font-size: 12px;
+    }
+    #span-text {
+        font-size: 10px;
+        margin: 10px;
+    }
+    .banner-button{
+        margin: 5px auto 0;
+    }
+    .banner-button a{
+        font-size: 10px;
+        width: 110px;
+        height: 30px;
+        margin: 0 5px;
+        padding: 7px 0;
+    } 
+    .social-icons{
+        bottom: -1%;
+    }
+    .social-icons img{
+        width: 15px;
     }
 }
