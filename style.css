@@ -349,7 +349,6 @@ nav ul li a:hover::after{
 }
 @media screen and (max-height: 340px){
     .logo{
-        top: -3%;
     } 
     .social-icons{
         bottom: -1%;
