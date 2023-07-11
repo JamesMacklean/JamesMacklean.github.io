@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>James Lusuegro</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section id="banner">
+            <img src="https://raw.githubusercontent.com/JamesMacklean/JamesMacklean.github.io/master/resources/logo.png" 
+            alt="James & Kinah" class="logo">
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Me</a></li>
+                    <li><a href="">Portfolio</a></li>                  
+                </ul>
+                <img src="https://raw.githubusercontent.com/JamesMacklean/JamesMacklean.github.io/master/resources/images/icons/cart.png"
+                alt="cart icon" class="cart-icon">
+            </nav>
+
+            <div class="banner-text">
+                <p>I'M</p>
+                <h1>JAMES,</h1>
+                <h3>a Software Developer and Computer Engineer who can build
+                    <br>systems, apps and websites for you!</h3>
+                <div class="banner-button">
+                    <a href=""><span class="hover-effect"></span> My Portfolio</a>
+                    <a href=""><span class="hover-effect"></span>Connect With Me <span>&#x27F6;</span></a>
+                    <span id="span-text">You Can Explore More About My Portfolio And
+                        <br>Personal Life Experiences Here.</span>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a href=""><img src="https://raw.githubusercontent.com/JamesMacklean/JamesMacklean.github.io/master/resources/images/icons/facebook.png" alt="facebook"></a>
+                <a href=""><img src="https://raw.githubusercontent.com/JamesMacklean/JamesMacklean.github.io/master/resources/images/icons/instagram.png" alt="instagram"></a>
+                <a href=""><img src="https://raw.githubusercontent.com/JamesMacklean/JamesMacklean.github.io/master/resources/images/icons/twitter.png" alt="twitter"></a>
+            </div>
+        </section>
+        
+        <div id="sideNav">
+                <div>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Me</a></li>
+                        <li><a href="">Portfolio</a></li>      
+                    </ul>
+                </div>
+        </div>
+
+        <div id="menuButton">
+            <img src="https://raw.githubusercontent.com/JamesMacklean/JamesMacklean.github.io/master/resources/images/icons/hamburger-icon.png" alt="menu button" id="hamburger-icon">
+        </div>
+
+        <script>
+            var menuButton = document.getElementById("menuButton")
+            var sideNav = document.getElementById("sideNav")
+            var hamburgerIcon = document.getElementById("hamburger-icon")
+            
+            sideNav.style.right = "-150px"
+            
+            menuButton.onclick = function(){
+                if(sideNav.style.right == "-150px"){
+                    sideNav.style.right = "0";
+                    hamburgerIcon.src = "https://raw.githubusercontent.com/JamesMacklean/JamesMacklean.github.io/master/resources/images/icons/close.png";
+                } else {
+                    sideNav.style.right = "-150px";
+                    hamburgerIcon.src = "https://raw.githubusercontent.com/JamesMacklean/JamesMacklean.github.io/master/resources/images/icons/hamburger-icon.png";
+                }
+            }
+
+        </script>
+    </body>
+</html>
