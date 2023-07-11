@@ -1,0 +1,10 @@
+*.sqlite3
+/staticfiles/
+/media/
+__pycache__
+.env
+.vscode/
+.idea/
+/local_settings.py
+/venv/
+/pipenv/
