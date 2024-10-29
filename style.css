@@ -167,6 +167,7 @@ nav ul li a:hover::after {
 
 .social-icons img {
     width: 25px;
+    display: block;
     margin: 25px 5px;
 }
 
@@ -279,5 +280,10 @@ nav ul li a:hover::after {
         right: 50%;
         transform: translateX(50%);
         bottom: 3%;
+    }
+    .social-icons img{
+        width: 15px;
+        display: inline-block;
+        margin: 10px 5px;
     }
 }
