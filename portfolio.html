@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the same CSS file -->
+    <style>
+        /* Additional styles for the portfolio section */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f0f0f0;
+        }
+
+        #portfolio {
+            padding: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .portfolio-item {
+            background: #fff;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: calc(33% - 30px); /* Three items per row */
+            transition: transform 0.3s;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .portfolio-description {
+            padding: 15px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            .portfolio-item {
+                width: calc(50% - 30px); /* Two items per row on smaller screens */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .portfolio-item {
+                width: 100%; /* One item per row on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="portfolio">
+        <h1>My Portfolio</h1>
+        <div class="portfolio-item">
+            <img src="resources/background.jpg" alt="Sample Project 1">
+            <div class="portfolio-description">
+                <h3>Project Title 1</h3>
+                <p>A brief description of the project. It includes the technologies used and the purpose of the project.</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="resources/background.jpg" alt="Sample Project 2">
+            <div class="portfolio-description">
+                <h3>Project Title 2</h3>
+                <p>A brief description of the project. It includes the technologies used and the purpose of the project.</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="resources/background.jpg" alt="Sample Project 3">
+            <div class="portfolio-description">
+                <h3>Project Title 3</h3>
+                <p>A brief description of the project. It includes the technologies used and the purpose of the project.</p>
+            </div>
+        </div>
+        <!-- Add more portfolio items as needed -->
+    </section>
+</body>
+</html>
